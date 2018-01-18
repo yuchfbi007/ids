@@ -1,0 +1,5 @@
+src\openig\agentapp\
+src\openig\j2ee_agents\
+src\openig\jetty-8.1\
+*.zip
+*.war

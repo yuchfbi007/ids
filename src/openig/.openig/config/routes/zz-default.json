@@ -1,0 +1,10 @@
+{
+"handler":{
+       "type": "ClientHandler",
+       "config": {
+        "trustManager": {
+            "type": "TrustAllManager"
+        }
+    }
+}
+}

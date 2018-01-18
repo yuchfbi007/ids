@@ -1,0 +1,499 @@
+=========================================
+== OpenIG 5.0 - Open Source Copyrights ==
+=========================================
+
+activation-1.1.jar
+==================
+Licensed under CDDL 1.0
+License terms can be found at: http://maven.ibiblio.org/maven2/javax/activation/activation/1.1/activation-1.1.pom
+Copyright 2006 SUN MICROSYSTEMS, INC.
+
+backbone.paginator-2.0.2
+========================
+Licensed under MIT
+Source Code can be found at: https://github.com/backbone-paginator/backbone.paginator
+License terms can be found at: https://github.com/backbone-paginator/backbone.paginator/blob/2.0.2/LICENSE-MIT
+2013 Copyright (c) 2013 Jimmy Yuen Ho Wong and contributors
+
+backgrid-0.3.5
+==============
+Licensed under MIT
+Source Code can be found at: https://github.com/wyuenho/backgrid
+License terms can be found at: https://github.com/wyuenho/backgrid/blob/0.3.5/LICENSE-MIT
+2012 Copyright (c) 2012 Jimmy Yuen Ho Wong
+
+backgrid-paginator-0.3.5
+========================
+Licensed under MIT
+Source Code can be found at: https://github.com/wyuenho/backgrid-paginator
+License terms can be found at: https://github.com/wyuenho/backgrid-paginator/blob/0.3.5/LICENSE-MIT
+2013 Copyright (c) 2013 Jimmy Yuen Ho Wong and contributors
+
+bootstrap3-dialog-v1.34.4
+=========================
+Licensed under MIT
+Source Code can be found at: https://github.com/nakupanda/bootstrap3-dialog
+License terms can be found at: https://github.com/nakupanda/bootstrap3-dialog/blob/v1.34.4/README.md
+Copyright 2016 javanoob@hotmail.com
+
+common-hotfix-2015-06-12
+========================
+Licensed under MIT
+Source Code can be found at: https://github.com/gelnato/edx
+License terms can be found at: https://github.com/PaulUithol/Backbone-relational
+2014 Copyright (c) 2011-2014 Paul Uithol, http://progressivecompany.nl/
+
+commons-logging-1.1.1.jar
+=========================
+Licensed under Apache 2.0
+Source Code can be found at: http://svn.apache.org/repos/asf/commons/proper/logging/tags/commons-logging-1.1.1
+License terms can be found at: http://maven.ibiblio.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+Copyright 2001 The Apache Software Foundation
+
+commons-logging-api-1.1.jar
+===========================
+Licensed under Apache 2.0
+Source Code can be found at: http://svn.apache.org/repos/asf/jakarta/commons/proper/logging/trunk/
+License terms can be found at: http://mirrors.ibiblio.org/pub/mirrors/maven2/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+Copyright 2001 The Apache Software Foundation
+
+dragula-v3.6.6
+==============
+Licensed under MIT
+Source Code can be found at: https://github.com/bevacqua/dragula
+License terms can be found at: https://github.com/bevacqua/dragula/blob/v3.6.6/license
+2016 Copyright ? 2015-2016 Nicolas Bevacqua
+
+esapiport-2013-12-04.jar
+========================
+Licensed under BSD 3
+
+2007 Copyright - The OWASP Foundation
+
+forgerock-guava-annotations-18.0.4.jar
+======================================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+forgerock-guava-base-18.0.4.jar
+===============================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+forgerock-guava-cache-18.0.4.jar
+================================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+forgerock-guava-collect-18.0.4.jar
+==================================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+forgerock-guava-concurrent-18.0.4.jar
+=====================================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+forgerock-guava-math-18.0.4.jar
+===============================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+forgerock-guava-primitives-18.0.4.jar
+=====================================
+Licensed under Apache 2.0
+License terms can be found at: https://github.com/google/guava/blob/master/pom.xml
+2016 Copyright 2016 ForgeRock AS.
+
+grizzly-framework-2.3.28.jar
+============================
+Licensed under CDDL+GPL
+Source Code can be found at: http://java.net/projects/grizzly/sources/git/show/grizzly-framework
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/org/glassfish/grizzly/grizzly-framework/2.3.28/grizzly-framework-2.3.28.pom
+Copyright Oracle Corporation
+
+groovy-all-2.4.6.jar
+====================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/apache/groovy.git
+License terms can be found at: http://maven.ibiblio.org/maven2/org/codehaus/groovy/groovy-all/2.4.6/groovy-all-2.4.6.pom
+Copyright 2003 Apache Software Foundation
+
+guice-assistedinject-3.0.jar
+============================
+Licensed under Apache 2.0
+Source Code can be found at: http://code.google.com/p/google-guice/source/browse/extensions-parent/guice-assistedinject
+License terms can be found at: http://maven.ibiblio.org/maven2/com/google/inject/extensions/guice-assistedinject/3.0/guice-assistedinject-3.0.pom
+Copyright 2006 Google, Inc.
+
+guice-multibindings-3.0.jar
+===========================
+Licensed under Apache 2.0
+Source Code can be found at: http://code.google.com/p/google-guice/source/browse/extensions-parent/guice-multibindings
+License terms can be found at: http://maven.ibiblio.org/maven2/com/google/inject/extensions/guice-multibindings/3.0/guice-multibindings-3.0.pom
+Copyright 2006 Google, Inc.
+
+guice-no_aop-3.0.jar
+====================
+Licensed under Apache 2.0
+License terms can be found at: https://code.google.com/p/google-guice/
+2006 Copyright 2006-2011 Google, Inc.
+
+httpasyncclient-osgi-4.1.2.jar
+==============================
+Licensed under Apache 2.0
+Source Code can be found at: https://svn.apache.org/repos/asf/httpcomponents/httpasyncclient/tags/4.1.2/httpasyncclient-osgi
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/org/apache/httpcomponents/httpasyncclient-osgi/4.1.2/httpasyncclient-osgi-4.1.2.pom
+Copyright 2010 The Apache Software Foundation
+
+httpclient-osgi-4.5.2.jar
+=========================
+Licensed under Apache 2.0
+Source Code can be found at: https://svn.apache.org/repos/asf/httpcomponents/httpclient/tags/4.5.2/httpclient-osgi
+License terms can be found at: https://maven-central.storage.googleapis.com/org/apache/httpcomponents/httpclient-osgi/4.5.2/httpclient-osgi-4.5.2.pom
+Copyright 1999 The Apache Software Foundation
+
+httpcore-osgi-4.4.5.jar
+=======================
+Licensed under Apache 2.0
+Source Code can be found at: https://svn.apache.org/repos/asf/httpcomponents/httpcore/tags/4.4.5/httpcore-osgi
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/org/apache/httpcomponents/httpcore-osgi/4.4.5/httpcore-osgi-4.4.5.pom
+Copyright 2005 The Apache Software Foundation
+
+i18next-1.7.3
+=============
+Licensed under MIT
+Source Code can be found at: https://github.com/i18next/i18next
+License terms can be found at: https://github.com/i18next/i18next/blob/1.7.3/README.md
+2011 Copyright (c) 2011 Jan M?hlemann
+
+isorelax-20030108.jar
+=====================
+Licensed under MIT
+License terms can be found at: http://sourceforge.net/projects/iso-relax/?source=navbar
+Copyright 2002 SourceForge ISO-RELAX Project (ASAMI Tomoharu, Daisuke Okajima, Kohsuke Kawaguchi, and MURATA Makoto)
+
+ivy-2.4.0.jar
+=============
+Licensed under Apache 2.0
+Source Code can be found at: http://svn.apache.org/repos/asf/ant/ivy/core/trunk
+License terms can be found at: http://maven.ibiblio.org/maven2/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.pom
+Copyright The Apache Software Foundation
+
+jackson-annotations-2.8.4.jar
+=============================
+Licensed under Apache 2.0
+Source Code can be found at: http://github.com/FasterXML/jackson-annotations
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/com/fasterxml/jackson/core/jackson-annotations/2.8.4/jackson-annotations-2.8.4.pom
+Copyright 2008 FasterXML
+
+jackson-core-2.8.4.jar
+======================
+Licensed under Apache 2.0
+Source Code can be found at: http://github.com/FasterXML/jackson-core
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/com/fasterxml/jackson/core/jackson-core/2.8.4/jackson-core-2.8.4.pom
+Copyright 2008 FasterXML
+
+jackson-databind-2.8.4.jar
+==========================
+Licensed under Apache 2.0
+Source Code can be found at: http://github.com/FasterXML/jackson-databind
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/com/fasterxml/jackson/core/jackson-databind/2.8.4/jackson-databind-2.8.4.pom
+Copyright 2008 FasterXML
+
+jackson-module-jsonSchema-2.8.4.jar
+===================================
+Licensed under Apache 2.0
+Source Code can be found at: http://github.com/FasterXML/jackson-module-jsonSchema
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/com/fasterxml/jackson/module/jackson-module-jsonSchema/2.8.4/jackson-module-jsonSchema-2.8.4.pom
+Copyright FasterXML
+
+java-ipv6-0.14
+==============
+Licensed under Apache 2.0
+Source Code can be found at: https://java-ipv6.googlecode.com/svn/tags/java-ipv6-0.14
+License terms can be found at: http://maven.ibiblio.org/maven2/com/googlecode/java-ipv6/java-ipv6/0.14/java-ipv6-0.14.pom
+Copyright 2013 Jan Van Besien
+
+javax.jms-api-2.0.1.jar
+=======================
+Licensed under CDDL 1.0
+Source Code can be found at: https://github.com/sonatype/jvnet-parent/javax.jms-api
+License terms can be found at: https://mvnrepository.com/artifact/javax.jms/javax.jms-api/2.0.1
+Copyright 2015 Oracle and/or its affiliates
+
+javax.mail-1.5.1.jar
+====================
+Licensed under CDDL 1.0
+Source Code can be found at: http://java.net/hg/javamail~mercurial/javax.mail
+License terms can be found at: https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.1
+Copyright Oracle
+
+jaxb-api-1.0.6.jar
+==================
+Licensed under CDDL 1.1
+Source Code can be found at: http://java.net/projects/jaxb/sources/version1/show/trunk/jaxb-ri/api
+License terms can be found at: https://opensource.org/licenses/CDDL-1.0
+Copyright 2011 Oracle and/or its affiliates
+
+jaxb-impl-1.0.6.jar
+===================
+Licensed under CDDL 1.0
+License terms can be found at: https://opensource.org/licenses/CDDL-1.0
+2001 Copyright (c) 2001-2011 Oracle and/or its affiliates. All rights reserved.
+
+jaxb-libs-1.0.6.jar
+===================
+Licensed under CDDL 1.0
+License terms can be found at: https://opensource.org/licenses/CDDL-1.0
+Copyright 2002 SourceForge ISO-RELAX Project (ASAMI Tomoharu, Kohsuke Kawaguchi, and MURATA Makoto)
+
+jaxb-xjc-1.0.6.jar
+==================
+Licensed under CDDL 1.0
+License terms can be found at: https://opensource.org/licenses/CDDL-1.0
+2001 Copyright (c) 2001-2011 Oracle and/or its affiliates. All rights reserved.
+
+jaxb1-impl-2.0.2.jar
+====================
+Licensed under CDDL 1.0
+License terms can be found at: https://opensource.org/licenses/CDDL-1.0
+Copyright 2012 SourceForge ISO-RELAX Project (ASAMI Tomoharu, Kohsuke Kawaguchi, and MURATA Makoto)
+
+jaxp-api-1.4.2.jar
+==================
+Licensed under CDDL 1.0
+License terms can be found at: https://jaxp.java.net/1.4/1.4.2/ReleaseNotes.html
+Copyright 2014 Oracle Corporation and/or its affiliates
+
+jaxrpc-api-1.1.jar
+==================
+Licensed under CDDL 1.0
+License terms can be found at: https://java.net/projects/jax-rpc/
+2001 Copyright (c) 2001-2011 Oracle and/or its affiliates. All rights reserved.
+
+jaxrpc-impl-1.1.3_01-20160905.jar
+=================================
+Licensed under CeCILL 1.0
+License terms can be found at: https://www.versioneye.com/java/com.sun.xml.rpc:jaxrpc-impl/1.1.3_01
+2006 Copyright 2006 Sun Microsystems Inc. All Rights Reserved
+
+jcip-annotations-1.0-1.jar
+==========================
+Licensed under Apache 2.0
+Source Code can be found at: http://github.com/stephenc/jcip-annotations/tree/master/
+License terms can be found at: http://maven.ibiblio.org/maven2/com/github/stephenc/jcip/jcip-annotations/1.0-1/jcip-annotations-1.0-1.pom
+Copyright 2013 Stephen Connolly
+
+jcl-over-slf4j-1.7.21.jar
+=========================
+Licensed under MIT
+Source Code can be found at: https://github.com/qos-ch/slf4j/jcl-over-slf4j
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.pom
+Copyright 2005 QOS.ch
+
+jersey-bundle-1.1.1-ea.jar
+==========================
+Licensed under CDDL 1.0
+Source Code can be found at: https://jersey.dev.java.net/source/browse/jersey/trunk/jersey/jersey-bundle/
+License terms can be found at: https://opensource.org/licenses/CDDL-1.0
+Copyright Sun Microsystems, Inc
+
+joda-time-2.7
+=============
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/JodaOrg/joda-time
+License terms can be found at: http://maven.ibiblio.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom
+Copyright 2002 Joda.org
+
+jquery-2.1.1
+============
+Licensed under MIT
+Source Code can be found at: https://github.com/jquery/jquery
+License terms can be found at: https://github.com/jquery/jquery/blob/2.1.1/MIT-LICENSE.txt
+2014 Copyright 2014 jQuery Foundation and other contributors
+
+jquery-dotimeout-v1.0
+=====================
+Licensed under MIT
+Source Code can be found at: https://github.com/cowboy/jquery-dotimeout
+License terms can be found at: https://github.com/cowboy/jquery-dotimeout/blob/v1.0/LICENSE-MIT
+2010 Copyright (c) 2010 "Cowboy" Ben Alman
+
+jquery-placeholder-v2.0.8
+=========================
+Licensed under MIT
+Source Code can be found at: https://github.com/mathiasbynens/jquery-placeholder
+License terms can be found at: https://github.com/mathiasbynens/jquery-placeholder/blob/v2.0.8/LICENSE-MIT.txt
+2016 Copyright Mathias Bynens <http://mathiasbynens.be/>
+
+json-20090211.jar
+=================
+Licensed under MIT
+License terms can be found at: http://mirrors.ibiblio.org/pub/mirrors/maven2/org/json/json/20090211/json-20090211.pom
+Copyright 2002 JSON.org
+
+jsr311-api-1.1.jar
+==================
+Licensed under CDDL 1.0
+License terms can be found at: http://maven.ibiblio.org/maven2/javax/ws/rs/jsr311-api/1.1/jsr311-api-1.1.pom
+Copyright 2009 Sun Microsystems Inc. All Rights Reserved
+
+juel-api-2.2.7.jar
+==================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/beckchr/juel/juel-api
+License terms can be found at: https://maven-central.storage.googleapis.com/de/odysseus/juel/juel-api/2.2.7/juel-api-2.2.7.pom
+Copyright 2006 Odysseus Software GmbH
+
+juel-impl-2.2.7.jar
+===================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/beckchr/juel/juel-impl
+License terms can be found at: http://maven.ibiblio.org/maven2/de/odysseus/juel/juel-impl/2.2.7/juel-impl-2.2.7.pom
+Copyright 2006 Odysseus Software GmbH
+
+ktv-week-master_2013-04-12
+==========================
+Licensed under MIT
+Source Code can be found at: https://github.com/likang/ktv-week
+License terms can be found at: https://github.com/arshaw/xdate
+2011 Copyright (c) 2011 Adam Shaw, http://arshaw.com/xdate/
+
+lodash-master_2015-08-05
+========================
+Licensed under MIT
+Source Code can be found at: https://github.com/tterian/fickle_trial
+License terms can be found at: https://github.com/tterian/fickle_trial/blob/master/lib/assets/bower_components/lodash/LICENSE
+2015 Copyright 2012-2015 The Dojo Foundation <http://dojofoundation.org/>
+
+logback-classic-1.1.7.jar
+=========================
+Licensed under Eclipse 1.0
+Source Code can be found at: https://github.com/ceki/logback/logback-classic
+License terms can be found at: https://opensource.org/licenses/EPL-1.0
+Copyright 2005 QOS.ch
+
+logback-core-1.1.7.jar
+======================
+Licensed under Eclipse 1.0
+Source Code can be found at: https://github.com/ceki/logback/logback-core
+
+Copyright 2005 QOS.ch
+
+metrics-core-3.1.2.jar
+======================
+Licensed under Apache 2.0
+Source Code can be found at: http://github.com/dropwizard/metrics/metrics-core/
+License terms can be found at: http://maven.ibiblio.org/maven2/io/dropwizard/metrics/metrics-core/3.1.2/metrics-core-3.1.2.pom
+Copyright 2013 Coda Hale and Yammer, Inc.
+
+minimumChangeCalculator-master_2014-03-10
+=========================================
+Licensed under MIT
+Source Code can be found at: https://github.com/patrick-a/minimumChangeCalculator
+License terms can be found at: https://github.com/jashkenas/backbone
+2016 Copyright (c) 2010-2016 Jeremy Ashkenas, DocumentCloud
+
+moment-2.8.1
+============
+Licensed under MIT
+Source Code can be found at: https://github.com/moment/moment
+License terms can be found at: https://github.com/moment/moment/blob/2.8.1/LICENSE
+2014 Copyright (c) 2011-2014 Tim Wood, Iskren Chernev, Moment.js contributors
+
+org.apache.servicemix.bundles.javax-inject-1_2.jar
+==================================================
+Licensed under Apache 2.0
+Source Code can be found at: http://svn.apache.org/viewvc/servicemix/smx4/bundles/tags/org.apache.servicemix.bundles.javax-inject-1_2
+License terms can be found at: http://maven.ibiblio.org/maven2/org/apache/servicemix/bundles/org.apache.servicemix.bundles.javax-inject/1_2/org.apache.servicemix.bundles.javax-inject-1_2.pom
+Copyright 2005 The Apache Software Foundation
+
+reactive-streams-1.0.0.jar
+==========================
+Licensed under CC0
+Source Code can be found at: git@github.com:reactive-streams/reactive-streams.git
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/org/reactivestreams/reactive-streams/1.0.0/reactive-streams-1.0.0.pom
+2016 Copyright Statement for Contributions to the Reactive Streams Project
+
+relaxngDatatype-20050407.jar
+============================
+Licensed under Apache 2.0
+License terms can be found at: http://activemq.apache.org/
+Copyright 2001 Thai Open Source Software Center Ltd
+
+requirejs-2.1.14
+================
+Licensed under BSD 3
+Source Code can be found at: https://github.com/jrburke/requirejs
+License terms can be found at: https://github.com/requirejs/requirejs/blob/2.1.14/LICENSE
+2014 Copyright (c) 2010-2014, The Dojo Foundation. All rights reserved.
+
+rxjava-2.0.0.jar
+================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/ReactiveX/RxJava.git
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/io/reactivex/rxjava2/rxjava/2.0.0/rxjava-2.0.0.pom
+2016 Copyright (c) 2016-present, RxJava Contributors.
+
+selectize.js
+============
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/selectize/selectize.js
+License terms can be found at: https://github.com/selectize/selectize.js/blob/v0.12.1/LICENSE
+2016 Copyright ? 2013?2015 Brian Reavis & Contributors
+
+slf4j-api-1.7.21.jar
+====================
+Licensed under MIT
+Source Code can be found at: https://github.com/qos-ch/slf4j/slf4j-api
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.pom
+Copyright 2005 QOS.ch
+
+spin.js
+=======
+Licensed under MIT
+Source Code can be found at: https://github.com/fgnass/spin.js
+License terms can be found at: https://github.com/fgnass/spin.js/blob/2.0.1/LICENSE.txt
+Copyright 2014 Felix Gnass [fgnass at neteye dot de]
+
+super-csv-2.4.0.jar
+===================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/super-csv/super-csv/super-csv
+License terms can be found at: http://mirrors.ibiblio.org/pub/mirrors/maven2/net/sf/supercsv/super-csv/2.4.0/super-csv-2.4.0.pom
+Copyright 2007 Super CSV
+
+swagger-models-1.5.9.jar
+========================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/swagger-api/swagger-core/modules/swagger-models
+License terms can be found at: http://repo.jfrog.org/artifactory/list/repo1/io/swagger/swagger-models/1.5.9/swagger-models-1.5.9.pom
+2016 Copyright 2016 SmartBear Software
+
+validation-api-1.1.0.Final.jar
+==============================
+Licensed under Apache 2.0
+Source Code can be found at: https://github.com/beanvalidation/beanvalidation-api
+License terms can be found at: http://mirrors.ibiblio.org/pub/mirrors/maven2/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.pom
+2009 Copyright 2009-2013, Red Hat, Inc. and/or its affiliates, and individual contributors
+
+xmlsec-1.5.6.jar
+================
+Licensed under Apache 2.0
+Source Code can be found at: http://svn.apache.org/repos/asf/santuario/xml-security-java/tags/1.5.6
+License terms can be found at: http://maven.ibiblio.org/maven2/org/apache/santuario/xmlsec/1.5.6/xmlsec-1.5.6.pom
+Copyright 2013 The Apache Software Foundation
+
+xsdlib-20060615.jar
+===================
+Licensed under CDDL 1.0
+
+2001 Copyright (c) 2001-2013 Oracle and/or its affiliates. All rights reserved.

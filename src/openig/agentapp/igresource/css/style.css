@@ -1,0 +1,16 @@
+.ig_fixed{ 
+        position:fixed; /*对于火狐等其他浏览器需要设置的*/ 
+        top:0px;  /*同上*/ 
+        width:100%; 
+        height:100%;
+ }  
+ .ig_ie{   
+       _position: absolute;  
+       _clear: both;   
+       _top:expression(eval(document.compatMode &&   
+               document.compatMode=='CSS1Compat') ?   
+               documentElement.scrollTop   
+               +(documentElement.clientHeight-this.clientHeight) - 1   
+               : document.body.scrollTop   
+               +(document.body.clientHeight-this.clientHeight) - 1); 
+}

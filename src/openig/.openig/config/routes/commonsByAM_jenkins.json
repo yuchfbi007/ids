@@ -1,0 +1,43 @@
+{
+	"handler": {
+		"type": "Chain",
+		"config": {
+			"filters": [{
+				"type": "CryptoHeaderFilter",
+				"config": {
+					"messageType": "REQUEST",
+					"operation": "DECRYPT",
+					"algorithm": "DES/ECB/NoPadding",
+					"keyType": "DES",
+					"key": "6WHZxEBoTFc=",
+					"headers": ["_am_sunIdentityUserPassword"]
+				}
+			},
+			{
+				"type": "org.forgerock.openig.filter.StaticRequestPlugFilter",
+				"config": {
+					"method": "GET",
+					"uri": "http://172.19.58.215/jenkins/login",
+					"username": "${request.headers['_am_UserToken'][0]}",
+					"password": "${request.headers['_am_sunIdentityUserPassword'][0]}",
+					"usrInputName": "j_username",
+					"pwdInputName": "j_password",
+					"logBtnName": "Submit",
+					"formName": "login",
+					"action": "/jenkins/j_acegi_security_check",
+					"pwdFromDb": false
+				}
+			}],
+			"handler": {
+				"name": "BlindTrustClientHandle",
+				"type": "ClientHandler",
+				"config": {
+					"trustManager": {
+						"type": "TrustAllManager"
+					}
+				}
+			}
+		}
+	},
+	"condition": "${matches(request.uri.path, '^/igbuild')}"
+}

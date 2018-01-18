@@ -1,0 +1,24 @@
+{
+	"handler": {
+		"type": "Router",
+		"name": "_router",
+		"baseURI": "http://localhost",
+		"capture": "all"
+	},
+	"heap": [{
+		"name": "JwtSession",
+		"type": "JwtSession"
+	},
+	{
+		"name": "myURI",
+		"type": "BaseUriDecorator"
+	},
+	{
+		"name": "capture",
+		"type": "CaptureDecorator",
+		"config": {
+			"captureEntity": false,
+			"captureContext": false
+		}
+	}]
+}

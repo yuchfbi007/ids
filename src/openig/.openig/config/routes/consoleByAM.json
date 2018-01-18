@@ -1,0 +1,35 @@
+{
+	"handler": {
+		"type": "Chain",
+		"config": {
+			"filters": [{
+				"type": "CryptoHeaderFilter",
+				"config": {
+					"messageType": "REQUEST",
+					"operation": "DECRYPT",
+					"algorithm": "DES/ECB/NoPadding",
+					"keyType": "DES",
+					"key": "6WHZxEBoTFc=",
+					"headers": ["_am_sunIdentityUserPassword"]
+				}
+			},
+			{
+				"type": "org.forgerock.openig.filter.ConsoleRequestPlugFilter",
+				"config": {
+					"username": "${request.headers['_am_UserToken'][0]}"
+				}
+			}],
+			"handler": {
+				"name": "BlindTrustClientHandle",
+				"baseURI": "http://www.yuch.com.con",
+				"type": "ClientHandler",
+				"config": {
+					"trustManager": {
+						"type": "TrustAllManager"
+					}
+				}
+			}
+		}
+	},
+	"condition": "${matches(request.uri.path, '^/console')}"
+}

@@ -1,0 +1,196 @@
+DO NOT TRANSLATE OR LOCALIZE
+
+**********************
+ForgeRock dependencies
+**********************
+
+Version: api-descriptor-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: chf-client-apache-async-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: chf-client-apache-common-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: chf-http-core-21.0.0.jar
+Copyright: Copyright 2012-2017 ForgeRock AS.
+           Copyright 2010-2011 ApexIdentity Inc.
+           Copyright 2009 Sun Microsystems Inc.
+           Portions Copyright 2011-2017 ForgeRock AS.
+           Portions Copyright 2010-2011 ApexIdentity Inc.
+
+Version: chf-http-servlet-21.0.0.jar
+Copyright: Copyright 2010–2011 ApexIdentity Inc.
+           Copyright 2012-2017 ForgeRock AS.
+           Portions Copyright 2011-2015 ForgeRock AS.
+
+Version: chf-oauth2-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: contrib-http-framework-5.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: forgerock-audit-core-21.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+           Copyright 2013 Cybernetica AS
+           Copyright 2006-2008 Sun Microsystems, Inc.
+           Portions Copyright 2013-2015 ForgeRock AS.
+
+Version: forgerock-audit-handler-csv-21.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: forgerock-audit-handler-elasticsearch-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: forgerock-audit-handler-jdbc-21.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: forgerock-audit-handler-jms-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: forgerock-audit-handler-json-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: forgerock-audit-handler-syslog-21.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+           Copyright 2013 Cybernetica AS
+
+Version: forgerock-audit-json-21.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: forgerock-guava-annotations-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guava-base-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guava-cache-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guava-collect-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guava-concurrent-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guava-math-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guava-primitives-18.0.4.jar
+Copyright: Copyright (C) 2005-2014 The Guava Authors
+           Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-guice-core-2.0.3.jar
+Copyright: Copyright 2014-2016 ForgeRock AS.
+
+Version: forgerock-util-21.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+           Copyright (c) 2010-2011 ApexIdentity Inc. All rights reserved.
+           Portions Copyright 2011-2015 ForgeRock AS.
+
+Version: json-resource-21.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+
+Version: json-resource-http-21.0.0.jar
+Copyright: Copyright 2012-2017 ForgeRock AS.
+
+Version: json-web-token-21.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+
+Version: openam-audit-context-14.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: openam-audit-core-14.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: openam-certs-14.0.0.jar
+Copyright: Copyright (c) 2005 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2015-2017 ForgeRock AS.
+
+Version: openam-federation-library-14.0.0.jar
+Copyright: Copyright (c) 2007 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2015-2017 ForgeRock AS.
+
+Version: openam-i18n-14.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.
+
+Version: openam-idpdiscovery-14.0.0.jar
+Copyright: Copyright (c) 2007 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2013-2017 ForgeRock AS.
+
+Version: openam-keystore-14.0.0.jar
+Copyright: Copyright (c) 2005 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2017 ForgeRock AS.
+
+Version: openam-ldap-utils-14.0.0.jar
+Copyright: Copyright (c) 2007 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2013-2017 ForgeRock AS.
+
+Version: openam-liberty-schema-14.0.0.jar
+Copyright: Copyright (c) 2006 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2012-2017 ForgeRock AS.
+
+Version: openam-saml2-schema-14.0.0.jar
+Copyright: Copyright (c) 2006 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2012-2017 ForgeRock AS.
+
+Version: openam-shared-14.0.0.jar
+Copyright: Copyright (c) 2006 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2012-2017 ForgeRock AS.
+
+Version: openam-wsfederation-schema-14.0.0.jar
+Copyright: Copyright (c) 2007 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2012-2017 ForgeRock AS.
+
+Version: openam-xacml3-schema-14.0.0.jar
+Copyright: Copyright (c) 2009 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2012-2017 ForgeRock AS.
+
+Version: i18n-core-1.4.2.jar
+Copyright: Copyright 2011 ForgeRock AS
+           Copyright 2007-2009 Sun Microsystems, Inc.
+
+Version: i18n-slf4j-1.4.2.jar
+Copyright: Copyright 2011-2014 ForgeRock AS
+
+Version: opendj-core-4.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+           Copyright 2006-2011 Sun Microsystems, Inc.
+           Copyright 2013-2014 Manuel Gaupp
+           Portions Copyright 2011-2015 ForgeRock AS.
+           Portions Copyright 2012-2014 Manuel Gaupp
+
+Version: opendj-grizzly-4.0.0.jar
+Copyright: Copyright 2013-2017 ForgeRock AS.
+           Copyright 2009-2010 Sun Microsystems, Inc.
+           Portions Copyright 2011-2017 ForgeRock AS.
+
+Version: openig-core-5.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+           Portions Copyright 2010–2011 ApexIdentity Inc.
+           Portions Copyright 2011-2017 ForgeRock AS.
+
+Version: openig-oauth2-5.0.0.jar
+Copyright: Copyright 2011-2017 ForgeRock AS.
+
+Version: openig-openam-5.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: openig-saml-5.0.0.jar
+Copyright: Copyright (c) 2007-2008 Sun Microsystems Inc. All Rights Reserved
+           Copyright 2010–2011 ApexIdentity Inc.
+           Copyright 2014-2017 ForgeRock AS.
+           Portions Copyright 2011-2017 ForgeRock AS.
+
+Version: openig-uma-5.0.0.jar
+Copyright: Copyright 2015-2017 ForgeRock AS.
+
+Version: security-21.0.0.jar
+Copyright: Copyright 2016-2017 ForgeRock AS.

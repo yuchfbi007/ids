@@ -1,0 +1,1 @@
+curl -sSL https://get.daocloud.io/daotools/set_mirror.sh | sh -s http://53a5d06d.m.daocloud.io

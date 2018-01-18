@@ -1,0 +1,7 @@
+# Agent User Response File
+CONFIG_DIR= /opt/jetty-8.1/etc
+JETTY_HOME= /opt/jetty-8.1
+AM_SERVER_URL= default-am-url
+AGENT_URL= default-agent-url
+AGENT_PROFILE_NAME= default-agent-name
+AGENT_PASSWORD_FILE= /opt/j2ee_agents/pwd.txt

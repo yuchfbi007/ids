@@ -1,0 +1,196 @@
+#!/bin/bash
+
+echo '#############################################'
+echo Function: IDS Control Panel
+echo Author: huyh
+echo Email: huyh@founder.com
+echo All Rights Reserved by Founder.Inc
+echo
+echo
+echo '#############################################'
+
+IDS_HOME=${IDS_HOME:-.}
+if [ -f $IDS_HOME/env ];then
+    source $IDS_HOME/env
+fi
+IDS_DATASPACE_DIR=${IDS_DATASPACE_DIR:-$HOME/.ids}
+IDS_DOCKER_REG=${IDS_DOCKER_REG:-hub.fzyun.io:5000}
+IDS_DOCKER_REPO=${IDS_DOCKER_REPO:-founder}
+IDS_DOCKER_TAG=${IDS_DOCKER_TAG:-latest}
+
+_export()
+{
+    echo NOTE: please shutdown IDS before exporting its configuration file
+    if [ ! -d $IDS_DATASPACE_DIR ]; then
+        echo "ERROR: $IDS_DATASPACE_DIR is not exist or directory"
+        return -1
+    fi
+    shift && getopts "o:" opt 
+    if [ "o" = "$opt" ]; then
+        echo "exporting ids config into file $OPTARG..."
+        sudo tar -zcf $OPTARG -C $HOME `basename $IDS_DATASPACE_DIR`  \
+        && echo "ids config file is exported into $OPTARG, DONE!"
+    else
+        default_target=`mktemp XXXX.tar.gz`
+        echo "exporting ids config into file $default_target"
+        sudo tar -zcf $default_target -C $IDS_DATASPACE_DIR * \
+        && echo "ids config file is exported into $default_target, DONE!"
+    fi
+}
+
+_import()
+{
+    echo NOTE: please shutdown IDS before exporting its configuration file
+    if [ ! -e $IDS_DATASPACE_DIR ]; then
+        mkdir -p $IDS_DATASPACE_DIR
+    fi
+    shift && getopts "f:" opt 
+    if [ "f" = "$opt" ]; then
+        echo "importing ids config from file $OPTARG..."
+        sudo tar -zxf $OPTARG -C $HOME \
+        && echo "ids config file is imported into $IDS_DATASPACE_DIR, DONE!"
+    else
+        echo 'please tell me which config file to import.( e.g. -f ./ids-config-file.tar.gz )'
+    fi
+
+}
+
+print_help_msg()
+{
+    echo 'Usage: ./ids <SUBCOMMAND> [OPTION]'
+    echo SUBCOMMAND:
+    echo -e  \\tgenesis: generate a full new IDS instance
+    echo -e  \\tinit: initialize IDS persistent cofiguration directory structure
+    echo -e  \\tbuild: build IDS docker images
+    echo -e  \\tpush: push IDS docker images to Founder development repository
+    echo -e  \\tpull: pull IDS dockr images from Founder development repository
+    echo -e  \\tup: startup ids
+    echo -e  \\tdown: shutdown ids
+    echo -e  \\tpurge: purge old ids configuration files
+    echo -e  \\timport: import ids configuration files from the file with suffix .tar.gz
+    echo -e  \\texport: export ids configuration files to the file with suffix .tar.gz
+    echo -e  \\thelp: print this help message
+    echo OPTION:
+    echo -e  \\t init -f: force initialization option for subcommand \"init\"
+    echo -e  \\t 'import -f <SRC>: import config file from SRC'
+    echo -e  \\t 'export -o <DEST>: export config file to DEST'
+}
+
+pull()
+{
+    reg=$IDS_DOCKER_REG repo=$IDS_DOCKER_REPO tag=$IDS_DOCKER_TAG
+    docker pull $reg/$repo/openam:$tag
+    docker pull $reg/$repo/openidm:$tag
+    docker pull $reg/$repo/opendj:$tag
+}
+
+push()
+{
+    reg=$IDS_DOCKER_REG repo=$IDS_DOCKER_REPO tag=$IDS_DOCKER_TAG
+    docker push $reg/$repo/openam:$tag
+    docker push $reg/$repo/openidm:$tag
+    docker push $reg/$repo/opendj:$tag
+}
+build()
+{
+    reg=$IDS_DOCKER_REG repo=$IDS_DOCKER_REPO tag=$IDS_DOCKER_TAG
+    docker build -t $reg/$repo/openam:$tag $IDS_HOME/src/openam
+    docker build -t $reg/$repo/openidm:$tag $IDS_HOME/src/openidm
+    docker build -t $reg/$repo/opendj:$tag $IDS_HOME/src/opendj
+    docker system prune -f
+}
+
+
+init()
+{
+    if [ "f" = "$1" ]; then
+        purge  &&  _initialize
+    else
+        _initialize
+    fi
+}
+
+purge()
+{
+    if [ ! -e $IDS_DATASPACE_DIR ]; then
+        echo $IDS_DATASPACE_DIR is not exist, no need to purge, SKIP...
+        return 0
+    fi
+    down
+    echo WARNGING: purging all the files in "$IDS_DATASPACE_DIR"...
+    sudo /bin/rm -r $IDS_DATASPACE_DIR && \
+    echo purge $IDS_DATASPACE_DIR DONE! || echo purge FAILED!
+}
+
+_initialize()
+{
+    echo initializing IDS configuration files...
+    if [ -e $IDS_DATASPACE_DIR ]; then
+        echo $IDS_DATASPACE_DIR is exist, SKIP...
+        return 0
+    fi
+    mkdir -p $IDS_DATASPACE_DIR/mysql/ && /bin/cp -r $IDS_HOME/src/mysql/scripts $IDS_DATASPACE_DIR/mysql/
+    mkdir -p $IDS_DATASPACE_DIR/nginx/conf.d && /bin/cp $IDS_HOME/src/nginx/* $IDS_DATASPACE_DIR/nginx/conf.d/
+    echo IDS configuration files initialized!
+}
+
+up()
+{
+    docker system prune -f
+    _initialize
+    docker-compose -f $IDS_HOME/docker-compose.yml -p fids --project-directory $IDS_HOME up $*
+}
+
+down()
+{
+    docker-compose -f $IDS_HOME/docker-compose.yml -p fids --project-directory $IDS_HOME down $*
+    docker system prune -f
+}
+
+case $1 in
+    "genesis")
+        echo "purging $IDS_DATASPACE_DIR..."
+        purge
+        echo "initializing $IDS_DATASPACE_DIR..."
+        _initialize
+        echo "starting ids..."
+        up -d --build
+    ;;
+    "init")
+        shift && getopts "f" opt 
+        if [ "f" = "$opt" ]; then
+            init f 
+        else
+            init 
+        fi
+     ;;
+    "build")
+        build
+    ;;
+    "push")
+        push
+    ;;
+    "pull")
+        pull
+    ;;
+    "up")
+        shift
+        up $*
+    ;;
+    "down")
+        shift
+        down $*
+    ;;
+    "purge")
+        purge
+    ;;
+    "import")
+        _import $*
+    ;;
+    "export")
+        _export $*
+    ;;
+    *)
+        print_help_msg
+    ;;
+esac

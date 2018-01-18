@@ -1,0 +1,46 @@
+{
+	"handler": {
+		"type": "Chain",
+		"config": {
+			"filters": [{
+				"type": "ConditionalFilter",
+				"config": {
+					"condition": "${matches(request.uri.path, '.*wui.*/login.jsp.*')}",
+					"delegate": {
+						"type": "StaticRequestFilter",
+						"config": {
+							"method": "GET",
+							"uri": "http://localhost:80/igoa?ig_login_error_=true"
+						}
+					}
+				}
+			},
+			{
+				"type": "ConditionalFilter",
+				"config": {
+					"condition": "${matches(request.uri.path,'/login/Logout.jsp')}",
+					"delegate": {
+						"type": "HeaderFilter",
+						"config": {
+							"messageType": "RESPONSE",
+							"remove": ["Location"],
+							"add": {
+								"Location": ["https://jtoa.founder.com/login/Logout.jsp"]
+							}
+						}
+					}
+				}
+			}],
+			"handler": {
+				"name": "BlindTrustClientHandle",
+				"type": "ClientHandler",
+				"config": {
+					"trustManager": {
+						"type": "TrustAllManager"
+					}
+				}
+			}
+		}
+	},
+	"condition": "${matches(request.uri.path, '.*wui.*/login.jsp.*') or matches(request.uri.path, '/login/Logout.jsp')}"
+}

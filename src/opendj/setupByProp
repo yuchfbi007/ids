@@ -1,0 +1,1 @@
+/opt/opendj/setup --cli --propertiesFilePath /opt/opendj/setup.properties  --acceptLicense --no-prompt --doNotStart

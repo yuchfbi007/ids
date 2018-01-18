@@ -1,0 +1,92 @@
+version: "3"
+networks:
+  fids_idsnet:
+    external: true
+services:
+  ids_oa:
+    image: hub.fzyun.io:5000/founder/openig
+    volumes:
+        - "~/.ids/ids_data/openig:/root/.ids"
+    ports: 
+             - "$AGENT_PORT_OA"
+    extra_hosts:
+             - "$AM_DOMAIN_NAME:$AM_IP"
+             - "$IGOA_DOMAIN_NAME:$IGOA_IP"
+    command: sh /opt/j2ee_agents/install-agent.sh
+    env_file: .env
+    environment:
+             - baseURI=https://jtoa.founder.com
+             - igDomainName=$IGOA_DOMAIN_NAME
+             - defaultAmUrl=http://$AM_DOMAIN_NAME:$AM_PORT/$AM_CONTEXT
+             - defaultAgentName=$IGOA_DOMAIN_NAME
+             - defaultAgentUrl=http://$IGOA_DOMAIN_NAME:$AGENT_PORT_OA/agentapp
+             - agentPort=$AGENT_PORT_OA
+    container_name: ids_oa
+    networks:
+        fids_idsnet:
+            ipv4_address: 192.168.1.36
+####################################################
+  ids_kb:
+    image: hub.fzyun.io:5000/founder/openig
+    ports: 
+             - "$AGENT_PORT_KB"
+    extra_hosts:
+             - "$AM_DOMAIN_NAME:$AM_IP"
+             - "$IGKB_DOMAIN_NAME:$IGKB_IP"
+    command: sh /opt/j2ee_agents/install-agent.sh
+    env_file: .env
+    environment:
+             - baseURI=http://kb.fzyun.io
+             - igDomainName=$IGKB_DOMAIN_NAME
+             - defaultAmUrl=http://$AM_DOMAIN_NAME:$AM_PORT/$AM_CONTEXT
+             - defaultAgentName=$IGKB_DOMAIN_NAME
+             - defaultAgentUrl=http://$IGKB_DOMAIN_NAME:$AGENT_PORT_KB/agentapp
+             - agentPort=$AGENT_PORT_KB
+    container_name: ids_kb
+    networks:
+        fids_idsnet:
+            ipv4_address: 192.168.1.37
+####################################################            
+  ids_jenkins:
+    image: hub.fzyun.io:5000/founder/openig
+    ports: 
+             - "$AGENT_PORT_JENKINS"
+    extra_hosts:
+             - "$AM_DOMAIN_NAME:$AM_IP"
+             - "$IGJENKINS_DOMAIN_NAME:$IGJENKINS_IP"
+    command: sh /opt/j2ee_agents/install-agent.sh
+    env_file: .env
+    environment:
+             - baseURI=http://jenkins.fzyun.io
+             - igDomainName=$IGJENKINS_DOMAIN_NAME
+             - defaultAmUrl=http://$AM_DOMAIN_NAME:$AM_PORT/$AM_CONTEXT
+             - defaultAgentName=$IGJENKINS_DOMAIN_NAME
+             - defaultAgentUrl=http://$IGJENKINS_DOMAIN_NAME:$AGENT_PORT_JENKINS/agentapp
+             - agentPort=$AGENT_PORT_JENKINS
+    container_name: ids_jenkins
+    networks:
+        fids_idsnet:
+            ipv4_address: 192.168.1.38
+####################################################            
+  ids_build:
+    image: hub.fzyun.io:5000/founder/openig
+    ports: 
+             - "$AGENT_PORT_BUILD"
+    extra_hosts:
+             - "$AM_DOMAIN_NAME:$AM_IP"
+             - "$IGBUILD_DOMAIN_NAME:$IGBUILD_IP"
+    command: sh /opt/j2ee_agents/install-agent.sh
+    env_file: .env
+    environment:
+             - baseURI=http://172.19.58.215
+             - igDomainName=$IGBUILD_DOMAIN_NAME
+             - defaultAmUrl=http://$AM_DOMAIN_NAME:$AM_PORT/$AM_CONTEXT
+             - defaultAgentName=$IGBUILD_DOMAIN_NAME
+             - defaultAgentUrl=http://$IGBUILD_DOMAIN_NAME:$AGENT_PORT_BUILD/agentapp
+             - agentPort=$AGENT_PORT_BUILD
+    container_name: ids_build
+    networks:
+        fids_idsnet:
+            ipv4_address: 192.168.1.39
+
+

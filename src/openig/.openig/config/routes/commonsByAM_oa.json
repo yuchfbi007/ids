@@ -1,0 +1,45 @@
+{
+	"handler": {
+		"type": "Chain",
+		"config": {
+			"filters": [{
+				"type": "CryptoHeaderFilter",
+				"config": {
+					"messageType": "REQUEST",
+					"operation": "DECRYPT",
+					"algorithm": "DES/ECB/NoPadding",
+					"keyType": "DES",
+					"key": "6WHZxEBoTFc=",
+					"headers": ["_am_sunIdentityUserPassword"]
+				}
+			},
+			{
+				"type": "org.forgerock.openig.filter.StaticRequestPlugFilter",
+				"config": {
+					"method": "get",
+					"uri": "https://jtoa.founder.com/login/Login.jsp?logintype=1&noAllowIe=yes",
+					"username": "${request.headers['_am_UserToken'][0]}",
+					"password": "${request.headers['_am_sunIdentityUserPassword'][0]}",
+					"usrInputName": "loginid",
+					"pwdInputName": "userpassword",
+					"logBtnName": "SM",
+					"formName": "form1",
+					"action": "/login/VerifyLogin.jsp",
+					"pwdDefaultAm": true,
+					"jqueryLib": false,
+					"pwdFromDb": true
+				}
+			}],
+			"handler": {
+				"name": "BlindTrustClientHandle",
+				"type": "ClientHandler",
+				"config": {
+					"trustManager": {
+						"type": "TrustAllManager"
+					}
+				}
+			}
+		}
+	},
+	"condition": "${matches(request.uri.path, '^/igoa')}"
+}
